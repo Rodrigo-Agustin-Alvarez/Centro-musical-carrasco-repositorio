@@ -1,0 +1,540 @@
+header{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.imagenfondo{
+        background-image: url(../assets/img/Index.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+}
+@font-face {
+    font-family: "Cocogoose";
+    src: url(../assets/font/Cocogoose\ Pro-trial.ttf);
+    font-family: "roboto";
+    src: url(../assets/font/Roboto/Roboto-Regular.ttf);
+}
+h1{
+    display:inline;
+    margin-left: 20px;
+    position: absolute;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #FFFF;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 5px solid #FFFF;
+}
+nav a img{
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 80px;
+    height: 87px;
+    margin-top: 5px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    list-style-type: none;
+
+}
+nav ul li a{
+    color: #FFFF;
+    font-family: "Cocogoose";
+    font-style: normal;
+    font-weight: 400px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 10px;
+}
+.index{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body{
+    margin: 0%;
+}
+.frasemotivadora{
+    color: #FFFF;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.cajitanegra{
+    align-items: center;
+    background-color: black;
+    width: 690px;
+    height: 140px;
+    margin-top: 90px;
+}
+.textocentral{
+    margin-top: 3em;
+}
+.fraseindex{
+    color: #FFFF;
+    font-family: "Cocogoose";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 15px black;
+
+
+}
+.botonindex{
+    display: flex;
+    justify-content: center;
+    background-color: #EC7341;
+    width: 276px;
+    height: 80px;
+    margin-top: 350px;
+}
+.unite{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20em;
+}
+footer div a{
+    padding: 1em;
+    text-decoration: none;
+}
+.body-quienes-somos{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 6em 165em 4em;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+    grid-row-gap: 5px;
+
+}
+.header-qs{
+    grid-area: nav;
+}
+.main-qs{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 60em 25em 80em;
+    grid-template-areas: 
+    "filauno filauno filauno"
+    "titulo titulo titulo"
+    "uno dos tres";
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+}
+.footer-qs{
+    grid-area: footer;
+    margin-top: 65em;
+}
+.filauno-qs{
+    grid-area: filauno;
+    background-image: url(../assets/img/img\ quienes\ somos.jpg);
+    background-size: cover;
+}
+.titulo-galeria{
+    grid-area: titulo;
+    background-color: black;
+}
+.titulo-galeria h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:3.7em;
+
+}
+.galeria-uno{
+    grid-area: uno;
+}
+.galeria-uno img{
+    width: 100%;
+    object-fit: cover;
+}
+.img1{
+    height: 50%;
+}
+.img2{
+    height: 35%;
+}
+.img7{
+    height: 50%;
+}
+.img10{
+    height: 50%;
+
+}
+.galeria-dos{
+    grid-area: dos;
+}
+.img3{
+    height: 65%;
+}
+.img4{
+    height: 35%;
+}
+.img8{
+    height: 50%;
+}
+.img11{
+    height: 35%;
+}
+.galeria-dos img{
+    width: 100%;
+    object-fit: cover;
+}
+.galeria-tres{
+    grid-area: tres;
+}
+.galeria-tres img{
+    width: 100%;
+    object-fit: cover;
+}
+.img5{
+    height: 50%;
+}
+.img6{
+    height: 40%;
+}
+.img9{
+    height: 50%;
+}
+.img12{
+    height: 45%;
+
+}
+h2{
+    color: #FFFF;
+    font-family: "cocogoose";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57px;
+    text-transform: uppercase;
+}
+.tituloqs{
+    display: flex;
+    flex-direction: row;
+    margin-left: 4em;
+}
+.textoexplicativo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    width: 40em;
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: justify;
+}
+.imgelectrica{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/img\ electrica.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+}
+.imgbajo{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/img/img\ bajo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+}
+.titulopagina{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    font-family: 'Cocogoose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 57px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.parrafo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 2em;
+    width: 40em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 47px;
+    color: #FFFFFF;
+}
+.imgcontacto{
+    background-image: url(../assets/img/img\ contactos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5em;
+}
+.marnegativo{
+    margin-top: -50px;
+}
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-left: 4em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 20px;
+    background-color: rgba(0,0,0, 0.6)
+}
+.enviar{
+    width: 150px;
+    margin-top: 10px;
+}
+.cuadro-comentarios{
+    margin: 3px;
+}
+.imagen-sala{
+    background-image: url(../assets/img/img\ sala.jpg);
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+}
+.imagen-grabacion{
+    background-image: url(../assets/img/img\ grabacion.jpg);
+    display: flex;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:500px;
+}
+@media screen and (max-width: 400px) and (max-width: 767px){
+.body-quienes-somos{
+    grid-template-columns: 1fr;
+    grid-template-rows: 6em 165em 4em;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+.main-qs{
+    grid-template-columns: 1fr;
+    grid-template-rows: 45em 10em 50em 40em 50em;
+    grid-template-areas: 
+    "filauno"
+    "titulo"
+    "uno"
+    "dos" 
+    "tres";
+}
+.titulo-galeria h2{
+    margin-top:2em;
+}
+.titulopagina{
+    margin-left: 0.2em;
+    text-align: center;
+}
+h2{
+    font-size: 25px;
+    line-height: 36px;
+    margin-left: 0.2em;
+}
+.parrafo{
+    font-size: 18px;
+    line-height: 22px;
+    text-align: justify;
+    width: 95%;
+    margin-left: 0.2em;
+}
+.formulario-contacto{
+    width: 300px;
+    margin-left: 0.2em;
+}
+.mapa{
+    margin-left: 0.2em;
+    width: 330px;
+}
+.imagenfondo{
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 33px;
+    text-align: center;
+    margin-left: 1px;
+}
+nav a img {
+    width: 58px;
+    height: 53.32px;
+    left: 11px;
+    top: 10px;
+}
+nav ul {
+    display: none;
+}
+.frasemotivadora{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+}
+.cajitanegra{
+    width: 80%;
+    height: 100px;
+}
+.fraseindex{
+    font-size: 20px;
+}
+.botonindex{
+    width: 200px;
+    margin-top: 270px;
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .imagenfondo{
+        display: flex;
+        flex-direction: column;
+    }
+    .body-quienes-somos{
+        grid-template-columns: auto;
+        grid-template-rows: 6em 165em 4em;
+        grid-template-areas: 
+        "nav nav nav"
+        "main main main"
+        "footer footer footer";
+        grid-row-gap: 5px;
+        width: 100%;
+    }
+    .main-qs{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 60em 25em 80em;
+        grid-template-areas: 
+        "filauno filauno filauno"
+        "titulo titulo titulo"
+        "uno dos tres";
+        gap: 5px;
+        margin: 0;
+        padding: 0;
+    }
+    h1{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        margin-left: 5px;
+    
+    }
+    nav a img {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 50px;
+        height: 50px;
+        margin-top: 5px;
+    }
+    nav ul li a {
+            font-weight: 200px;
+            font-size: 13px;
+            margin: 4px;
+        }
+        .frasemotivadora{
+            font-weight: 400;
+            font-size: 27px;
+            line-height: 35px;
+        }
+        .cajitanegra{
+            width: 70%;
+            height: 100px;
+        }
+        .fraseindex{
+            font-size: 27px;
+        }
+    h2{
+    font-size: 30px;
+    line-height: 37px;
+    }
+    .mapa{
+        margin-left: 0.2em;
+        width: 70%;
+    }
+    .formulario-contacto{
+        width: 300px;
+        margin-left: 0.2em;
+    }
+    .titulopagina{
+        margin-left: 1em;
+    }
+    .parrafo{
+        font-size: 25px;
+        line-height: 22px;
+        width: 90%;
+        margin-left: 1.5em;
+    }
+    .imgcontacto{
+        width: 100%;
+    }
+    }
+
+@media screen and (max-width: 1024px) {
+
+
+}
