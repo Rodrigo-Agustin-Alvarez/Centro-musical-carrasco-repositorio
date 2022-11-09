@@ -1,27 +1,22 @@
-header{
+.bg-header{
     background-color: black;
-    width: 100%;
-    height: 100px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 .imagenfondo{
-        background-image: url(../assets/img/Index.png);
+        background-image: url(../assets/img/Index\ edit.png);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
 }
+
 @font-face {
     font-family: "Cocogoose";
     src: url(../assets/font/Cocogoose\ Pro-trial.ttf);
     font-family: "roboto";
     src: url(../assets/font/Roboto/Roboto-Regular.ttf);
 }
-h1{
-    display:inline;
+.navbar-brand{
     margin-left: 20px;
-    position: absolute;
     font-family: 'Cocogoose';
     font-style: normal;
     font-weight: 400;
@@ -31,29 +26,29 @@ h1{
     color: #FFFF;
 }
 nav{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; */
     border-bottom: 5px solid #FFFF;
 }
 nav a img{
-    margin-left: 25px;
     margin-right: 25px;
-    width: 80px;
+    width: 87px;
     height: 87px;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
-nav ul{
+/* nav ul{
     display: flex;
     flex-direction: row;
     justify-content: right;
     align-items: center;
     list-style-type: none;
 
-}
-nav ul li a{
+} */
+.navbar-nav{
     color: #FFFF;
     font-family: "Cocogoose";
     font-style: normal;
@@ -61,7 +56,6 @@ nav ul li a{
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
-    margin: 10px;
 }
 .index{
     display: flex;
@@ -88,7 +82,7 @@ body{
     background-color: black;
     width: 690px;
     height: 140px;
-    margin-top: 90px;
+    margin-top: 12em;
 }
 .textocentral{
     margin-top: 3em;
@@ -101,11 +95,12 @@ body{
     font-size: 25px;
     line-height: 36px;
     text-align: center;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.4em;
     text-transform: uppercase;
-    text-shadow: 0px 0px 15px black;
-
-
+    text-shadow: 10px 10px 15px black;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 8%;
 }
 .botonindex{
     display: flex;
@@ -113,7 +108,7 @@ body{
     background-color: #EC7341;
     width: 276px;
     height: 80px;
-    margin-top: 350px;
+    margin-top: 14%;
 }
 .unite{
     display: flex;
@@ -130,10 +125,9 @@ body{
 }
 footer{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20em;
+    margin-top: 15em;
 }
 footer div a{
     padding: 1em;
@@ -141,7 +135,7 @@ footer div a{
 }
 .body-quienes-somos{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows: 6em 165em 4em;
     grid-template-areas: 
     "nav nav nav"
@@ -279,7 +273,7 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:500px;
+    height:590px;
 }
 .imgbajo{
     display: flex;
@@ -288,12 +282,13 @@ h2{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height:500px;
+    height:590px;
 }
 .titulopagina{
     display: flex;
     flex-direction: column;
     margin-left: 2em;
+    margin-top: 2em;
     font-family: 'Cocogoose';
     font-style: normal;
     font-weight: 400;
@@ -306,6 +301,7 @@ h2{
     display: flex;
     flex-direction: column;
     margin-left: 2em;
+    margin-top: 1em;
     width: 40em;
     font-family: 'Roboto';
     font-style: normal;
@@ -332,7 +328,7 @@ h2{
 .formulario-contacto{
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 600px;
     margin-left: 4em;
     font-family: 'Roboto';
     font-style: normal;
@@ -344,11 +340,11 @@ h2{
     background-color: rgba(0,0,0, 0.6)
 }
 .enviar{
-    width: 150px;
+    width: 200px;
     margin-top: 10px;
 }
 .cuadro-comentarios{
-    margin: 3px;
+    margin: 5px;
 }
 .imagen-sala{
     background-image: url(../assets/img/img\ sala.jpg);
@@ -369,9 +365,25 @@ h2{
     height:500px;
 }
 @media screen and (max-width: 400px) and (max-width: 767px){
-.body-quienes-somos{
+    .navbar-brand{
+        font-size: 15px;
+        line-height: 21px;
+        text-align: center;
+        margin: 0;
+    }
+    .navbar-nav{
+        font-size: 13px;
+    }
+
+    nav a img{
+    width: 45px;
+    height: 45px;
+    margin-left: 0px;
+    margin-right: 5px;
+    }
+    .body-quienes-somos{
     grid-template-columns: 1fr;
-    grid-template-rows: 6em 165em 4em;
+    grid-template-rows: 65px 165em 4em;
     grid-template-areas: 
     "nav"
     "main"
@@ -379,13 +391,51 @@ h2{
 }
 .main-qs{
     grid-template-columns: 1fr;
-    grid-template-rows: 45em 10em 50em 40em 50em;
+    grid-template-rows: 45em 10em 60em 60em 60em;
     grid-template-areas: 
     "filauno"
     "titulo"
     "uno"
     "dos" 
     "tres";
+}
+.img1{
+    height: 25%;
+}
+.img2{
+    height: 25%;
+}
+.img3{
+    height: 25%;
+}
+.img4{
+    height: 25%;
+}
+.img5{
+    height: 25%;
+}
+.img6{
+    height: 25%;
+}
+.img7{
+    height: 25%;
+}
+.img8{
+    height: 25%;
+}
+.img9{
+    height: 25%;
+}
+.img10{
+    height: 25%;
+}
+.img11{
+    height: 25%;
+}
+.img12{
+    height: 25%;
+    transition: none;
+    translate: none;
 }
 .titulo-galeria h2{
     margin-top:2em;
@@ -400,8 +450,8 @@ h2{
     margin-left: 0.2em;
 }
 .parrafo{
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 20px;
     text-align: justify;
     width: 95%;
     margin-left: 0.2em;
@@ -418,22 +468,15 @@ h2{
     display: flex;
     flex-direction: column;
 }
-h1{
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 33px;
-    text-align: center;
-    margin-left: 1px;
-}
-nav a img {
+/* nav a img {
     width: 58px;
     height: 53.32px;
     left: 11px;
     top: 10px;
-}
-nav ul {
+} */
+/* nav ul {
     display: none;
-}
+} */
 .frasemotivadora{
     font-weight: 400;
     font-size: 20px;
@@ -442,13 +485,16 @@ nav ul {
 .cajitanegra{
     width: 80%;
     height: 100px;
+    margin-top: 20%;
 }
 .fraseindex{
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
 }
 .botonindex{
     width: 200px;
-    margin-top: 270px;
+    margin-top: 120px;
+    margin-bottom: -100px;
 }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -456,19 +502,19 @@ nav ul {
         display: flex;
         flex-direction: column;
     }
-    .body-quienes-somos{
+    /* .body-quienes-somos{
         grid-template-columns: auto;
-        grid-template-rows: 6em 165em 4em;
+        grid-template-rows: 60px 165em 4em;
         grid-template-areas: 
         "nav nav nav"
         "main main main"
         "footer footer footer";
         grid-row-gap: 5px;
-        width: 100%;
+        box-sizing: border-box;
     }
     .main-qs{
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 60em 25em 80em;
+        grid-template-rows: 60em 15em 80em;
         grid-template-areas: 
         "filauno filauno filauno"
         "titulo titulo titulo"
@@ -476,38 +522,45 @@ nav ul {
         gap: 5px;
         margin: 0;
         padding: 0;
-    }
-    h1{
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 28px;
-        margin-left: 5px;
-    
+    } */
+    .main-qs{
+        grid-template-rows: 60em 20em 85em;
     }
     nav a img {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: 50px;
-        height: 50px;
+        margin-left: 0px;
+        margin-right: 120px;
+        width: 70px;
+        height: 70px;
         margin-top: 5px;
     }
-    nav ul li a {
-            font-weight: 200px;
-            font-size: 13px;
-            margin: 4px;
+    .navbar-brand{
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .footer-qs{
+        margin-top: 68em;
+    }
+    /* nav ul li a {
+        font-weight: 200px;
+        font-size: 13px;
+        margin: 4px;
+    } */
+    .frasemotivadora{
+        font-weight: 400;
+        font-size: 27px;
+        line-height: 35px;
+    }
+    .cajitanegra{
+        width: 75%;
+        height: 120px;
         }
-        .frasemotivadora{
-            font-weight: 400;
-            font-size: 27px;
-            line-height: 35px;
-        }
-        .cajitanegra{
-            width: 70%;
-            height: 100px;
-        }
-        .fraseindex{
-            font-size: 27px;
-        }
+    .fraseindex{
+        font-size: 27px;
+        line-height: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     h2{
     font-size: 30px;
     line-height: 37px;
@@ -517,21 +570,30 @@ nav ul {
         width: 70%;
     }
     .formulario-contacto{
-        width: 300px;
         margin-left: 0.2em;
     }
     .titulopagina{
         margin-left: 1em;
     }
+    .titulo-galeria h2{
+        margin-top: 4em;
+        margin-bottom: 3em;
+    }
     .parrafo{
-        font-size: 25px;
-        line-height: 22px;
+        font-size: 30px;
+        line-height: 38px;
         width: 90%;
         margin-left: 1.5em;
     }
     .imgcontacto{
         width: 100%;
     }
+    }
+    .imagen-sala{
+        height: 550px;
+    }
+    .imagen-grabacion{
+        height: 550px;
     }
 
 @media screen and (max-width: 1024px) {

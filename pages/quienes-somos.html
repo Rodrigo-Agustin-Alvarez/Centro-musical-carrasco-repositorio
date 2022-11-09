@@ -7,11 +7,13 @@
     <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Quienes somos?</title>
 </head>
 <body class="body-quienes-somos">
-    <header class="header-qs">
+    <!-- <header class="header-qs">
         <nav>
             <a href="../index.html">
             <img src="../assets/img/Logo CMC sin marco.png" alt="logo">
@@ -23,6 +25,37 @@
                 <li><a href="./otros-servicios.html">Otros servicios</a> </li>
                 <li><a href="./contacto.html">Contacto</a></li>
             </ul>
+        </nav>
+    </header> -->
+    <header>
+        <nav class="navbar navbar-dark navbar-expand-lg bg-header">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/img/Logo CMC sin marco.png" alt="logo">CENTRO MUSICAL CARRASCO</a>
+            <button class="navbar-toggler navbar-brand" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Quienes somos?</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" href=".clases.html"role="button" data-bs-toggle="dropdown" aria-expanded="false">Clases</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./clases.html">Guitarra</a></li>
+                            <li><a class="dropdown-item" href="./clases.html">Bajo</a></li>
+                            <li><a class="dropdown-item" href="./clases.html">Bateria</a></li>
+                        </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./otros-servicios.html">Otros servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
         </nav>
     </header>
     <main class="main-qs">
@@ -43,26 +76,26 @@
         </div>
         </section>
         </section>
-        <div class="titulo-galeria">
+        <div class="titulo-galeria"data-aos="fade-up"data-aos-duration="1000">
             <h2>Nuestros alumnos <br>ON STAGE</h2>
         </div>
         <section class="galeria-uno">
-            <img class="img1" src="../assets/img/uno.jpg" alt="microfono-en-vivo">
-            <img class="img2" src="../assets/img/dos.jpg" alt="cantando-en-vivo">
-            <img class="img7" src="../assets/img/siete.jpg" alt="tocando-una-guitarra-eectrica">
-            <img class="img10" src="../assets/img/diez.jpg" alt="cantando-y-tocando-la-guitarra">
+            <img class="img1" src="../assets/img/uno.jpg" alt="microfono-en-vivo" data-aos="fade-up"data-aos-duration="1500">
+            <img class="img2" src="../assets/img/dos.jpg" alt="cantando-en-vivo"data-aos="fade-right"data-aos-duration="1500">
+            <img class="img7" src="../assets/img/siete.jpg" alt="tocando-una-guitarra-eectrica"data-aos="fade-up">
+            <img class="img10" src="../assets/img/diez.jpg" alt="cantando-y-tocando-la-guitarra"data-aos="fade-right">
         </section>
         <section class="galeria-dos">
-            <img class="img3" src="../assets/img/tres.jpg" alt="tocando-la-guitarra">
-            <img class="img4" src="../assets/img/cuatro.jpg" alt="tocando-la-guitarra-electrica">
-            <img class="img8" src="../assets/img/ocho.jpg" alt="banda-tocando-en-vivo">
-            <img class="img11" src="../assets/img/once.jpg" alt="escenario-de-un-toque-en-vivo">
+            <img class="img3" src="../assets/img/tres.jpg" alt="tocando-la-guitarra"data-aos="fade-up"data-aos-duration="1500">
+            <img class="img4" src="../assets/img/cuatro.jpg" alt="tocando-la-guitarra-electrica"data-aos="fade-up"data-aos-duration="1500">
+            <img class="img8" src="../assets/img/ocho.jpg" alt="banda-tocando-en-vivo"data-aos="fade-up">
+            <img class="img11" src="../assets/img/once.jpg"alt="escenario-de-un-toque-en-vivo">
         </section>
         <section class="galeria-tres">
-            <img class="img5" src="../assets/img/cinco.jpg" alt="muchacho-toca-guitarra-no-lo-podes-creer">
-            <img class="img6" src="../assets/img/seis.jpg" alt="musica-con-covid">
-            <img class="img9" src="../assets/img/nueve.jpg" alt="guitarra-electrica">
-            <img class="img12" src="../assets/img/doce.jpg" alt="tocando-la-bateria">
+            <img class="img5" src="../assets/img/cinco.jpg" alt="muchacho-toca-guitarra-no-lo-podes-creer"data-aos="fade-up"data-aos-duration="1500">
+            <img class="img6" src="../assets/img/seis.jpg" alt="musica-con-covid"data-aos="fade-up"data-aos-duration="1500">
+            <img class="img9" src="../assets/img/nueve.jpg" alt="guitarra-electrica"data-aos="fade-up">
+            <img class="img12" src="../assets/img/doce.jpg" alt="tocando-la-bateria"data-aos="fade-up">
         </section>
     </main>
     <footer class="footer-qs">
@@ -83,6 +116,12 @@
             </svg>
         </a>
         </div>
-    </footer> 
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
 </body>
 </html>
