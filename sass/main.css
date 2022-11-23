@@ -12,6 +12,8 @@
   font-family: "roboto";
   src: url(../assets/font/Roboto/Roboto-Regular.ttf);
 }
+@import url("https://fonts.cdnfonts.com/css/cocogoose%27");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 body {
   margin: 0%;
 }
