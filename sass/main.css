@@ -343,15 +343,19 @@ h2 {
 .parrafo {
   display: flex;
   flex-direction: column;
-  margin-left: 2.3em;
+  margin-left: 3em;
   margin-top: 1em;
-  width: 25em;
+  width: 35em;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 60px;
+  font-size: 28px;
+  line-height: 55px;
   color: #FFFFFF;
+}
+.margin-button{
+  margin-left: 4.8em;
+  margin-top: 8%;
 }
 
 .imgcontacto {
@@ -397,13 +401,14 @@ h2 {
 }
 
 .imagen-sala {
-  background-image: url(../assets/img/img\ sala.jpg);
+  background-image: url(../assets/img/img\ sala.jpg );
   display: flex;
   flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
+  
 }
 
 .imagen-grabacion {
